@@ -2,10 +2,10 @@ import React from "react";
 import TemperatureInput from "./tempinput.js";
 import BoilingVerdict from "./boilverdict.js";
 
-const scaleNames = {
-  c: "Celsius",
-  f: "Fahrenheit"
-};
+// const scaleNames = {
+//   c: "Celsius",
+//   f: "Farenheit"
+// };
 
 class Calculator extends React.Component {
   constructor(props) {
@@ -17,15 +17,15 @@ class Calculator extends React.Component {
     this.handleFarenheitChange = this.handleFarenheitChange.bind(this);
     this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
     this.tryConvert = this.tryConvert.bind(this);
-    this.toFahrenheit = this.toFahrenheit.bind(this);
+    this.toFarenheit = this.toFarenheit.bind(this);
     this.toCelsius = this.toCelsius.bind(this);
   }
 
-  toCelsius(fahrenheit) {
-    return ((fahrenheit - 32) * 5) / 9;
+  toCelsius(farenheit) {
+    return ((farenheit - 32) * 5) / 9;
   }
 
-  toFahrenheit(celsius) {
+  toFarenheit(celsius) {
     return (celsius * 9) / 5 + 32;
   }
 

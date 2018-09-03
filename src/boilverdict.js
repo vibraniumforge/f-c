@@ -5,7 +5,7 @@ class BoilingVerdict extends React.Component {
     if (this.props.celsius >= 100) {
       return (
         <p>
-          The water <em>WOULD</em> boil.
+          The water<em>WOULD</em> boil.
         </p>
       );
     }
